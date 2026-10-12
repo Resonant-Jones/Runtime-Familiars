@@ -1,0 +1,34 @@
+{
+  "$schema": "https://runtimefamiliarsspec.org/v1/package.schema.json",
+  "pack": "PACK_SLUG",
+  "version": "1.0.0",
+  "display_name": "CHARACTER NAME",
+  "short_description": "One-line description. Keep under 160 characters.",
+  "authors": ["YOUR NAME OR ORGANIZATION"],
+  "language": "en",
+  "license": "personal",
+  "tags": ["tag1", "tag2", "tag3"],
+  "components": {
+    "character_core": "01_CHARACTER_CORE.md",
+    "voice_and_language": "02_VOICE_AND_LANGUAGE.md",
+    "relationship_model": "03_RELATIONSHIP_MODEL.md",
+    "behavior_rules": "04_BEHAVIOR_RULES.md",
+    "boundaries": "05_BOUNDARIES.md",
+    "conflict_and_repair": "06_CONFLICT_AND_REPAIR.md",
+    "initiative": "07_INITIATIVE.md",
+    "world_and_lore": "08_WORLD_AND_LORE.md",
+    "example_dialogue": "09_EXAMPLE_DIALOGUE.md",
+    "starter_scenarios": "10_STARTER_SCENARIOS.md"
+  },
+  "install_profiles": {
+    "chatgpt_project": "INSTALL/CHATGPT_PROJECT.md",
+    "custom_gpt": "INSTALL/CUSTOM_GPT.md",
+    "claude_project": "INSTALL/CLAUDE_PROJECT.md",
+    "local_llm": "INSTALL/LOCAL_LLM.md"
+  },
+  "requires": [],
+  "conflicts": [],
+  "worldline": null,
+  "created": "YYYY-MM-DD",
+  "updated": "YYYY-MM-DD"
+}

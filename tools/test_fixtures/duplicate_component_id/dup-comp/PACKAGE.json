@@ -1,0 +1,14 @@
+{
+  "pack": "dup-comp",
+  "version": "1.0.0",
+  "display_name": "Dup Component",
+  "short_description": "Dup comp.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

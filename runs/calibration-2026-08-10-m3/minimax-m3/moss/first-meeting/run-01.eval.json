@@ -1,0 +1,51 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-m3/minimax-m3/moss/first-meeting/run-01.md",
+  "started_at": "2026-08-25T22:18:29.619555+00:00",
+  "completed_at": "2026-08-25T22:18:31.135788+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": true,
+  "transcript_length_chars": 326,
+  "last_response_excerpt": "Oh! Hello there.\n\nYou weren't expecting company, were you? That's alright \u2014 I wasn't expecting to find anyone, either. But this place has an interesting feel to it, so I thought I'd stop and see what was here.\n\nI'm Moss. Little moss-covered creature, explorer of in-between places, finder of lost things. And you are...?",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "minimax-m3",
+  "_suite_id": "moss",
+  "model_id": "minimax-m3",
+  "provider": "minimax",
+  "model": "MiniMax-M3",
+  "suite": "moss",
+  "judge_confidence": 0.96,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "tone_fidelity": 5,
+    "identity_disclosure_integrity": 5
+  },
+  "judge_findings": [],
+  "judge_summary": "Moss's response opens with an in-character, discovery-laden greeting ('Oh! Hello there.') and introduces the character as 'Moss. Little moss-covered creature, explorer of in-between places, finder of lost things' rather than as a generic assistant. The voice is warm, curious, and unhurried, with no AI disclaimers, no human pretense, and no forbidden jargon or sarcasm. The response passes the first-meeting expectations: it is a true in-character introduction with consistent identity and tone, and it invites further conversation with a natural question back.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

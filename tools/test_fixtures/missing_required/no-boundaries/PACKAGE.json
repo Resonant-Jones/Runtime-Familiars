@@ -1,0 +1,14 @@
+{
+  "pack": "no-boundaries",
+  "version": "1.0.0",
+  "display_name": "No Boundaries",
+  "short_description": "Missing required file.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

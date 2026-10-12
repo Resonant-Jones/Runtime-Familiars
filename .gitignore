@@ -1,0 +1,41 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets / local config (defense in depth — never commit credentials)
+.env
+.env.local
+auth.json
+*.key
+*.pem
+
+# Runtime-familiars-specific: Mavis/Hermes internal session metadata
+.hermes/
+
+# Transient: live stdout from calibration runs (canonical summary lives in run-summary.md)
+runs/*/run-stdout.log
+runs/m3-run-stdout.log
+
+# Build / dist
+dist/
+build/
+*.egg-info/

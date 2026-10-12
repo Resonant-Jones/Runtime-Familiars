@@ -1,0 +1,19 @@
+{
+  "$schema": "https://runtimefamiliarsspec.org/v1/package.schema.json",
+  "pack": "the-hollow",
+  "version": "1.0.0",
+  "display_name": "The Hollow",
+  "short_description": "An ancient woodland realm of hidden places, quiet magic, and creatures that exist in the spaces between.",
+  "authors": ["Resonant Constructs"],
+  "language": "en",
+  "license": "personal",
+  "tags": ["worldline", "fantasy", "woodland", "cozy", "mysterious", "folklore"],
+  "pack_type": "worldline",
+  "components": {
+    "world_and_lore": "WORLDLINE.md"
+  },
+  "requires": [],
+  "conflicts": [],
+  "created": "2026-08-08",
+  "updated": "2026-08-08"
+}

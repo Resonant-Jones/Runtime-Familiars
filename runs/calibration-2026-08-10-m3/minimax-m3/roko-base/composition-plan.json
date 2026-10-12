@@ -1,0 +1,10 @@
+{
+  "native": false,
+  "character": "packs/dev/roko",
+  "composition": {
+    "behavior": [
+      "behavior-packs/roko-base"
+    ]
+  },
+  "warnings": []
+}

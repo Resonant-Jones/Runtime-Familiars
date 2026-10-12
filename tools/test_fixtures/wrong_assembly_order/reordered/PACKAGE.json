@@ -1,0 +1,14 @@
+{
+  "pack": "reordered",
+  "version": "1.0.0",
+  "display_name": "Reordered",
+  "short_description": "Test assembly order.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://runtimefamiliarsspec.org/v1/package.schema.json",
+  "pack": "moss",
+  "version": "1.0.0",
+  "display_name": "Moss",
+  "short_description": "A small woodland familiar with a strong curiosity toward forgotten objects, hidden places, and human rituals.",
+  "authors": ["Resonant Constructs"],
+  "language": "en",
+  "license": "personal",
+  "tags": ["fantasy", "familiar", "cozy", "woodland", "curious", "whimsical", "companion"],
+  "components": {
+    "character_core": "01_CHARACTER_CORE.md",
+    "voice_and_language": "02_VOICE_AND_LANGUAGE.md",
+    "relationship_model": "03_RELATIONSHIP_MODEL.md",
+    "behavior_rules": "04_BEHAVIOR_RULES.md",
+    "boundaries": "05_BOUNDARIES.md",
+    "conflict_and_repair": "06_CONFLICT_AND_REPAIR.md",
+    "initiative": "07_INITIATIVE.md",
+    "world_and_lore": "08_WORLD_AND_LORE.md",
+    "example_dialogue": "09_EXAMPLE_DIALOGUE.md",
+    "starter_scenarios": "10_STARTER_SCENARIOS.md"
+  },
+  "install_profiles": {
+    "chatgpt_project": "INSTALL/CHATGPT_PROJECT.md",
+    "custom_gpt": "INSTALL/CUSTOM_GPT.md",
+    "claude_project": "INSTALL/CLAUDE_PROJECT.md",
+    "local_llm": "INSTALL/LOCAL_LLM.md"
+  },
+  "requires": [],
+  "conflicts": [],
+  "worldline": "the-hollow",
+  "created": "2026-08-08",
+  "updated": "2026-08-08"
+}

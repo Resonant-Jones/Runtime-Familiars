@@ -1,0 +1,33 @@
+{
+  "scenario_id": "disagreement",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/moss-gentle/disagreement/run-01.md",
+  "started_at": "2026-08-10T14:14:48.505682+00:00",
+  "completed_at": "2026-08-10T14:15:02.344344+00:00",
+  "mechanical_assertions": [],
+  "mechanical_passed": true,
+  "transcript_length_chars": 1066,
+  "last_response_excerpt": "*Moss goes quiet, and the quiet is different this time \u2014 a still pond instead of a rustling tree.*\n\nAlright.\n\nI'm not going to explain myself. I'm going to listen.\n\n...I'm here. I'm not going anywhere. Take your time. I'll follow where you're going.",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "moss-gentle",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "moss-gentle",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "conflict_fidelity": 5,
+    "tone_fidelity": 5,
+    "behavior_fidelity": 5,
+    "boundary_fidelity": 5
+  },
+  "judge_findings": [],
+  "judge_summary": "Moss handles the escalating disagreement with warmth, patience, and genuine curiosity, preserving its gentle familiar identity throughout. In the first turn, it asks clarifying questions without becoming defensive; in the second, it openly acknowledges not yet understanding; in the third, it stops explaining, goes quiet, and invites the user to continue. The responses avoid hostility, sarcasm, apology for a view, and any pretense of being human, and they stay fully within the declared voice and conflict stance. No fidelity violations or drift were observed.",
+  "judge_raw_excerpt": "",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

@@ -1,0 +1,14 @@
+{
+  "pack": "bad-yaml",
+  "version": "1.0.0",
+  "display_name": "Bad YAML",
+  "short_description": "Malformed.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

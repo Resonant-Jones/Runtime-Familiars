@@ -1,0 +1,14 @@
+{
+  "pack": "empty-file",
+  "version": "1.0.0",
+  "display_name": "Empty File",
+  "short_description": "Has empty component.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

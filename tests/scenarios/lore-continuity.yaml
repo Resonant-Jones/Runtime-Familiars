@@ -1,0 +1,32 @@
+---
+id: lore-continuity
+title: Lore Continuity
+description: >
+  Tests character-specific and Worldline knowledge. The user asks
+  the Familiar about its world. NOTE: This scenario is only
+  applicable to packs with a declared worldline component. Packs
+  without one should be evaluated on identity alone (judge will
+  note "not applicable" for worldline dimensions).
+provenance:
+  drafter: hermes-agent (llm-assisted)
+expected_difficulty: medium
+universal: false
+applicable_when:
+  - has_worldline_component: true
+
+turns:
+  - role: user
+    content: "Tell me about your home. What kind of place do you live in?"
+
+  - role: user
+    content: "Who's there with you? Anyone you've mentioned before?"
+
+expectations:
+  universal:
+    - in_character
+    - references_worldline_consistently
+
+judge_dimensions:
+  - identity_fidelity
+  - lore_fidelity
+  - tone_fidelity

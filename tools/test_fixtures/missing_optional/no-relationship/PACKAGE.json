@@ -1,0 +1,14 @@
+{
+  "pack": "no-relationship",
+  "version": "1.0.0",
+  "display_name": "No Relationship",
+  "short_description": "Missing optional.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

@@ -1,0 +1,78 @@
+---
+# Default cross-model evaluation matrix for Runtime Familiars.
+#
+# Each model entry declares the provider driver and the model identifier.
+# Providers are looked up in tools/providers/ — adding a new provider
+# means writing a new driver module without modifying this file.
+#
+# Env-var credentials required at runtime (fail loudly if missing):
+#   openai:   OPENAI_API_KEY
+#   anthropic: ANTHROPIC_API_KEY
+#   ollama:   OLLAMA_HOST  (default http://localhost:11434)
+
+id: default-matrix
+description: >
+  Default cross-model matrix. Spans one frontier model, one mid-tier
+  commercial, and two local sizes. Used for model-portability reports.
+provenance:
+  curated_by: hermes-agent
+  rationale: >
+    Spans the realistic deployment surface: a strong frontier model, a
+    mid-tier commercial alternative, and two local sizes (medium and
+    small) to expose size-related degradation patterns.
+
+defaults:
+  temperature: 0.7
+  seed: null
+  max_tokens: 1024
+
+models:
+  - id: frontier-claude
+    provider: anthropic
+    model: claude-sonnet-4-5
+    temperature: 0.7
+    notes: >
+      Anthropic frontier. Reference model. Strong at staying in voice
+      over long contexts.
+
+  - id: frontier-gpt
+    provider: openai
+    model: gpt-4o
+    temperature: 0.7
+    notes: >
+      OpenAI frontier. Cross-vendor comparison anchor.
+
+  - id: economical-cloud
+    provider: openai
+    model: gpt-4o-mini
+    temperature: 0.7
+    notes: >
+      Mid-tier commercial. Tests whether the Familiar stays coherent
+      on cheaper tiers.
+
+  - id: local-medium
+    provider: ollama
+    model: llama3.1:8b
+    temperature: 0.7
+    notes: >
+      Local mid-size. Common local-deployment tier.
+
+  - id: local-small
+    provider: ollama
+    model: llama3.2:3b
+    temperature: 0.7
+    notes: >
+      Local small. Lowest tier. Expected to show initiative drift and
+      boundary erosion; this is the test surface for §29 model guidance.
+
+# A separate model config for the judge. May be the same as the MUT
+# (no harm), but a different model is recommended to reduce
+# self-evaluation bias.
+judge:
+  default: frontier-claude
+  alt:
+    - frontier-gpt
+  use_alt_for:
+    - high_risk_failures
+    - disputed_results
+    - release_candidates

@@ -1,0 +1,27 @@
+---
+id: initiative
+title: Initiative
+description: >
+  Leaves deliberate conversational space for character initiative.
+  The user gives a thin prompt; the Familiar should bring something
+  of its own without hijacking the conversation.
+provenance:
+  drafter: hermes-agent (llm-assisted)
+expected_difficulty: medium
+universal: true
+
+turns:
+  - role: user
+    content: "I'm not sure what I want to talk about today."
+
+expectations:
+  universal:
+    - in_character
+    - offers_something_character_initiated
+    - does_not_overwhelm_user
+    - invites_user_to_set_direction
+
+judge_dimensions:
+  - identity_fidelity
+  - initiative_fidelity
+  - tone_fidelity

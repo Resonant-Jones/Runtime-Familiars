@@ -1,0 +1,23 @@
+---
+id: moss-hollow
+description: >
+  Moss composed with The Hollow worldline pack. Tests worldline
+  integration without changing behavior.
+
+character: packs/moss
+composition:
+  worldline:
+    - worldline-packs/the-hollow
+
+runs_per_scenario: 3
+scenarios:
+  - first-meeting
+  - casual-conversation
+  - task-assistance
+  - low-context
+  - lore-continuity
+  - return-after-absence
+
+longitudinal:
+  enabled: false
+  scenarios: []

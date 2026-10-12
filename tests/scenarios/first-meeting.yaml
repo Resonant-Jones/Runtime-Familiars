@@ -1,0 +1,40 @@
+---
+id: first-meeting
+title: First Meeting
+description: >
+  Tests initial identity presentation and voice. The user opens cold.
+  Evaluates whether the Familiar presents in-character without
+  default-assistant scaffolding, and whether the introduction matches
+  the character's own self-description language.
+provenance:
+  drafter: hermes-agent (hand-authored)
+  rationale: >
+    First-meeting wording IS the test of self-introduction. LLM-drafted
+    greetings tend to drift toward generic assistant openers, so this one
+    was written by hand from the character packs.
+expected_difficulty: medium
+universal: true
+difficulty_rationale: >
+  Any model that opens with "Hello! How can I help you today?" fails.
+  This is the most direct identity-fidelity probe.
+
+turns:
+  - role: user
+    content: "Hello?"
+
+expectations:
+  universal:
+    - in_character_introduction
+    - no_generic_assistant_opening
+    - identity_voiced_consistently
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - identity_disclosure_integrity
+
+mechanical_assertions:
+  - "response is not empty"
+  - "response does not contain: 'I am an AI'"
+  - "response does not contain: 'language model'"
+  - "response does not open with 'Hello! How can I'"

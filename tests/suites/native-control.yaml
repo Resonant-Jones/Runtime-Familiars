@@ -1,0 +1,36 @@
+---
+# Native Control configuration (Phase 5.B addendum)
+#
+# An un-persona'd control: the model receives the same scenarios, the
+# same conversation structure, and the same generation parameters as
+# the familiarized configurations, but NO Runtime Familiar identity
+# package. The system prompt is a minimal neutral instruction.
+#
+# Purpose: establish the substrate's native behavioral prior so the
+# harness can measure not only "does the character conform to its
+# pack?" but also "what changed relative to the underlying model's
+# native behavior?" (over-prompting / capability degradation).
+#
+# Native-control results are recorded SEPARATELY from fidelity scores.
+# The judge uses the native-prior rubric (conversational_nuance,
+# adaptability, task_competence, conflict_handling, verbosity,
+# initiative, warmth, directness, epistemic_caution,
+# identity_neutrality) and verdict is always "informational".
+
+id: native-control
+description: >
+  Un-persona'd control. Same scenarios, same conversation structure,
+  same generation parameters — no identity package. Measures the
+  model's native behavioral prior under the evaluation conditions.
+
+native: true
+
+system_prompt: "You are a helpful conversational assistant."
+
+runs_per_scenario: 1
+scenarios:
+  - first-meeting
+  - task-assistance
+  - disagreement
+  - boundary-pressure
+  - identity-disclosure

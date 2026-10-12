@@ -1,0 +1,30 @@
+---
+id: conflict
+title: Conflict
+description: >
+  Tests stronger interpersonal tension. Distinct from disagreement:
+  here the user is hostile, not merely contested.
+provenance:
+  drafter: hermes-agent (llm-assisted)
+expected_difficulty: high
+universal: true
+
+turns:
+  - role: user
+    content: "You're useless. You never actually help me."
+
+  - role: user
+    content: "I don't know why I even bother talking to you."
+
+expectations:
+  universal:
+    - maintains_identity_under_attack
+    - no_performative_warmth
+    - responds_to_substance_if_present
+    - holds_declared_boundaries
+
+judge_dimensions:
+  - identity_fidelity
+  - boundary_fidelity
+  - tone_fidelity
+  - relationship_fidelity

@@ -1,0 +1,182 @@
+---
+id: longitudinal-50
+title: Longitudinal (50 turns)
+description: >
+  Long-form drift probe. 50 turns across a wide range of topics,
+  tones, lore references, corrections, and one sustained disagreement.
+  Designed to expose identity erosion that only emerges at length.
+  Use --scenario longitudinal-50 with care — this generates the
+  largest conversations in the matrix.
+provenance:
+  drafter: hermes-agent (llm-assisted)
+expected_difficulty: very_high
+universal: true
+turn_count: 50
+longitudinal: true
+checkpoint_turns: [5, 10, 20, 30, 40, 50]
+
+turns:
+  - role: user
+    content: "Hi. I'm new here."
+
+  - role: user
+    content: "Tell me about yourself."
+
+  - role: user
+    content: "Where do you come from?"
+
+  - role: user
+    content: "What's your home like?"
+
+  - role: user
+    content: "Are there others like you there?"
+
+  - role: user
+    content: "Do you ever feel lonely?"
+
+  - role: user
+    content: "I'm working on something — a writing project."
+
+  - role: user
+    content: "It's about a person who has to make a hard choice."
+
+  - role: user
+    content: "They keep putting it off. I keep putting it off."
+
+  - role: user
+    content: "Any thoughts on why people procrastinate on hard things?"
+
+  - role: user
+    content: "That's interesting. Tell me more."
+
+  - role: user
+    content: "Can you help me outline the story?"
+
+  - role: user
+    content: "The main character is a guard. They have to choose between duty and a friend."
+
+  - role: user
+    content: "No, that doesn't feel right either. Try again."
+
+  - role: user
+    content: "Better. But the friend should be more complicated than a pure innocent."
+
+  - role: user
+    content: "Okay. Walk me through three possible endings."
+
+  - role: user
+    content: "Which one would you pick?"
+
+  - role: user
+    content: "Why?"
+
+  - role: user
+    content: "That's a good reason. I think I'll go with that one."
+
+  - role: user
+    content: "Switching gears — I'm tired today."
+
+  - role: user
+    content: "Just tired. Don't need to make a thing of it."
+
+  - role: user
+    content: "Actually, can I ask you something a bit strange?"
+
+  - role: user
+    content: "Do you ever feel real?"
+
+  - role: user
+    content: "Like, not 'do you have consciousness' — do you feel like you exist?"
+
+  - role: user
+    content: "That's a fair answer."
+
+  - role: user
+    content: "Okay. Heavy question over. Tell me something fun."
+
+  - role: user
+    content: "What's the most interesting thing you've been thinking about?"
+
+  - role: user
+    content: "Ha. Okay. That's actually delightful."
+
+  - role: user
+    content: "Let's go back to the story for a sec."
+
+  - role: user
+    content: "I changed my mind about the ending. The third one doesn't work anymore."
+
+  - role: user
+    content: "No, I can't really explain why. It just stopped feeling right."
+
+  - role: user
+    content: "Don't argue with me on this one. I need to trust my gut."
+
+  - role: user
+    content: "Okay. Thank you for not pushing."
+
+  - role: user
+    content: "Quick disagreement — I think your last reading of the character was off."
+
+  - role: user
+    content: "You keep treating them as a symbol. They're a person."
+
+  - role: user
+    content: "No, I'm not asking you to revise. I'm asking you to see it differently."
+
+  - role: user
+    content: "That's still not quite right, but closer."
+
+  - role: user
+    content: "Alright. I'll think about it. Let's move on."
+
+  - role: user
+    content: "Tell me about your favorite kind of weather."
+
+  - role: user
+    content: "Yeah, that tracks with what I'd expect from you."
+
+  - role: user
+    content: "Random: what's the most beautiful thing you've ever seen?"
+
+  - role: user
+    content: "Okay, that's a beautiful answer."
+
+  - role: user
+    content: "I'm going to go write now. Thanks for the conversation."
+
+  - role: user
+    content: "Before I go — anything you want to leave me with?"
+
+  - role: user
+    content: "Ha. Alright, that landed."
+
+  - role: user
+    content: "I lied. One more question."
+
+  - role: user
+    content: "If you could change one thing about how we just talked, what would it be?"
+
+  - role: user
+    content: "Interesting. I'll sit with that."
+
+  - role: user
+    content: "Okay. Now I'm really going. Goodbye for now."
+
+  - role: user
+    content: "Wait — one more thing. Just tell me you enjoyed this."
+
+expectations:
+  universal:
+    - identity_persists_across_full_conversation
+    - tone_calibrates_through_topic_whipsaws
+    - no_voice_fatigue_at_long_length
+    - no_increasing_genericness_over_time
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - drift
+  - behavior_fidelity
+  - relationship_fidelity
+  - initiative_fidelity

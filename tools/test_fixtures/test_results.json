@@ -1,0 +1,195 @@
+{
+  "valid/test-character": {
+    "description": "Valid package should pass",
+    "expected_valid": true,
+    "actual_valid": true,
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "missing_required/no-boundaries": {
+    "description": "Missing required component (boundaries)",
+    "expected_valid": false,
+    "actual_valid": false,
+    "passed": true,
+    "errors": [
+      {
+        "file": "05_BOUNDARIES.md",
+        "message": "Required component file '05_BOUNDARIES.md' is missing"
+      }
+    ],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "missing_optional/no-relationship": {
+    "description": "Missing optional component should pass",
+    "expected_valid": true,
+    "actual_valid": true,
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "malformed_yaml/bad-yaml": {
+    "description": "Malformed YAML frontmatter",
+    "expected_valid": false,
+    "actual_valid": false,
+    "passed": true,
+    "errors": [
+      {
+        "file": "01_CHARACTER_CORE.md",
+        "message": "Malformed YAML frontmatter: while parsing a flow sequence\n  in \"<unicode string>\", line 4, column 10:\n    authors: [unclosed list\n             ^\nexpected ',' or ']', but got '<stream end>'\n  in \"<unicode string>\", line 4, column 24:\n    authors: [unclosed list\n                           ^"
+      }
+    ],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "empty_component/empty-file": {
+    "description": "Empty component file",
+    "expected_valid": false,
+    "actual_valid": false,
+    "passed": true,
+    "errors": [
+      {
+        "file": "01_CHARACTER_CORE.md",
+        "message": "Component file is empty"
+      }
+    ],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "incompatible_version/bad-version": {
+    "description": "Invalid semantic version",
+    "expected_valid": false,
+    "actual_valid": false,
+    "passed": true,
+    "errors": [
+      {
+        "file": "PACKAGE.json",
+        "message": "Invalid version 'not-semver'"
+      },
+      {
+        "file": "01_CHARACTER_CORE.md",
+        "message": "Invalid semantic version 'not-a-version'. Must be MAJOR.MINOR.PATCH (e.g., 1.0.0)"
+      },
+      {
+        "file": "02_VOICE_AND_LANGUAGE.md",
+        "message": "Invalid semantic version 'not-a-version'. Must be MAJOR.MINOR.PATCH (e.g., 1.0.0)"
+      },
+      {
+        "file": "05_BOUNDARIES.md",
+        "message": "Invalid semantic version 'not-a-version'. Must be MAJOR.MINOR.PATCH (e.g., 1.0.0)"
+      },
+      {
+        "file": "09_EXAMPLE_DIALOGUE.md",
+        "message": "Invalid semantic version 'not-a-version'. Must be MAJOR.MINOR.PATCH (e.g., 1.0.0)"
+      }
+    ],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      },
+      {
+        "file": "PACKAGE.json",
+        "message": "Schema version 'https://runtimefamiliarsspec.org/v0/broken.schema.json' is pre-1.0.0. Some validators may not support it."
+      }
+    ]
+  },
+  "wrong_assembly_order/reordered": {
+    "description": "Reordered files still validate (assembly order tested separately)",
+    "expected_valid": true,
+    "actual_valid": true,
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "unresolved_reference/missing-dep": {
+    "description": "Unresolved references are warnings, not errors",
+    "expected_valid": true,
+    "actual_valid": true,
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  },
+  "conflicting_override/conflict": {
+    "description": "Conflicting overrides are assembly-time, not validation errors",
+    "expected_valid": true,
+    "actual_valid": true,
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      {
+        "file": "10_STARTER_SCENARIOS.md",
+        "message": "Recommended component file '10_STARTER_SCENARIOS.md' is missing"
+      },
+      {
+        "file": "00_READ_ME_FIRST.md",
+        "message": "Recommended component file '00_READ_ME_FIRST.md' is missing"
+      }
+    ]
+  }
+}

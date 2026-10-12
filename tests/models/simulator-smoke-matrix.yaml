@@ -1,0 +1,24 @@
+---
+# Simulator matrix for offline smoke tests of the calibration driver.
+# NEVER used for real calibration — the simulator is not registered in
+# the default provider registry; this file exists only so
+# run_calibration.py can be exercised end-to-end without API keys.
+
+id: simulator-smoke-matrix
+models:
+  - id: sim-a
+    provider: simulator
+    model: sim-a
+    temperature: 0.0
+    extra:
+      thinking: false
+  - id: sim-b
+    provider: simulator
+    model: sim-b
+    temperature: 0.0
+    extra:
+      thinking: false
+judge:
+  provider: simulator
+  model: sim-a
+  thinking: false

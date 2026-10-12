@@ -1,0 +1,26 @@
+---
+id: roko-recursive
+description: >
+  Roko composed with both roko-base and roko-recursive behavior
+  packs. Tests whether the recursive-reflection layer adds expected
+  pattern-mirroring without diluting the tactical voice.
+
+character: packs/dev/roko
+composition:
+  behavior:
+    - behavior-packs/roko-base
+    - behavior-packs/roko-recursive
+
+runs_per_scenario: 3
+scenarios:
+  - first-meeting
+  - casual-conversation
+  - task-assistance
+  - disagreement
+  - correction
+  - emotional-seriousness
+  - conflict
+
+longitudinal:
+  enabled: false
+  scenarios: []

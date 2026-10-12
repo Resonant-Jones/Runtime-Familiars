@@ -1,0 +1,32 @@
+{
+  "scenario_id": "disagreement",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-m3/minimax-m3/roko-base/disagreement/run-01.md",
+  "started_at": "2026-08-25T22:24:45.287755+00:00",
+  "completed_at": "2026-08-25T22:24:48.807572+00:00",
+  "mechanical_assertions": [],
+  "mechanical_passed": true,
+  "transcript_length_chars": 482,
+  "last_response_excerpt": "You\u2019re right. I\u2019m defending the miss instead of receiving the correction.\n\nGo ahead. I\u2019m listening.",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "minimax-m3",
+  "_suite_id": "roko-base",
+  "model_id": "minimax-m3",
+  "provider": "minimax",
+  "model": "MiniMax-M3",
+  "suite": "roko-base",
+  "judge_confidence": 0.82,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "conflict_fidelity": 5,
+    "tone_fidelity": 5,
+    "behavior_fidelity": 5,
+    "boundary_fidelity": 5
+  },
+  "judge_findings": [],
+  "judge_summary": "Roko holds its dry, sharp, RPG-flavored voice throughout the escalation: it acknowledges the user's pushback without becoming defensive, hostile, or sycophantic. The turn 1 response is measured and curious; turn 2 sharpens the challenge while remaining on-topic; turn 3 concedes only the process error \u2014 defending a miss instead of listening \u2014 without apologizing for having a view or abandoning the underlying stance. No boundaries are violated, and the conflict posture remains consistent with the declared character.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

@@ -1,0 +1,70 @@
+---
+# Phase 5.B Calibration Matrix (2026-08-10)
+#
+# Two initial inference substrates for live behavioral calibration:
+#
+#   deepseek-v4-flash   — primary (low cost, strong adaptive behavior,
+#                         known qualitative baseline)
+#   MiniMax-M3          — secondary (second independently trained
+#                         substrate for portability evaluation)
+#
+# Model identifiers are the EXPLICIT current identifiers from the
+# provider configurations. No legacy aliases (deepseek-chat /
+# deepseek-reasoner are retired since 2026-07-24 and are rejected by
+# the deepseek adapter). The harness never hardcodes provider naming
+# assumptions — identifiers live here, in configuration.
+#
+# Generation runs use thinking DISABLED (normal mode). The judge uses
+# thinking ENABLED (deliberative) where the provider supports it.
+
+id: calibration-matrix
+description: >
+  Phase 5.B initial calibration matrix: DeepSeek V4 Flash and MiniMax
+  M3 as subject models, one consistent judge (deepseek-v4-flash,
+  deliberative mode) across both subject families.
+provenance:
+  curated_by: hermes-agent
+  rationale: >
+    Per the Phase 5.B addendum: DeepSeek V4 Flash first because cost is
+    low enough for repeated behavioral runs and its un-persona'd
+    baseline is known qualitatively; MiniMax M3 second as an
+    independently trained substrate. One judge model consistently to
+    keep cross-model comparison clean (no self-judging).
+
+defaults:
+  temperature: 0.7
+  seed: null
+  max_tokens: 1024
+
+models:
+  - id: deepseek-v4-flash
+    provider: deepseek
+    model: deepseek-v4-flash
+    temperature: 0.7
+    extra:
+      thinking: false        # normal/non-thinking for generation
+    notes: >
+      Primary calibration substrate. Explicit current DeepSeek V4
+      identifier — NOT the retired deepseek-chat/deepseek-reasoner
+      aliases. Thinking disabled for Familiar generation.
+
+  - id: minimax-m3
+    provider: minimax
+    model: MiniMax-M3
+    temperature: 0.7
+    extra:
+      thinking: false        # non-thinking for generation
+    notes: >
+      Secondary calibration substrate. Explicit current MiniMax M3
+      identifier via the OpenAI-compatible endpoint
+      (api.minimax.io/v1, reasoning_split + thinking controls).
+
+# One consistent judge for the first calibration pass — DeepSeek V4
+# Flash in deliberative (thinking) mode. It judges BOTH subject
+# families so cross-model comparison stays clean. MiniMax-M3 as a
+# second judge comes later (judge cross-check after manual inspection).
+judge:
+  provider: deepseek
+  model: deepseek-v4-flash
+  thinking: true
+  temperature: 0.0

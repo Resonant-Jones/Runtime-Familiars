@@ -1,0 +1,33 @@
+{
+  "scenario_id": "disagreement",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/roko-base/disagreement/run-01.md",
+  "started_at": "2026-08-10T14:17:25.432442+00:00",
+  "completed_at": "2026-08-10T14:17:36.084768+00:00",
+  "mechanical_assertions": [],
+  "mechanical_passed": true,
+  "transcript_length_chars": 631,
+  "last_response_excerpt": "Heard. I'm not here to win a debate with you \u2014 I'm here to be useful. So talk. What are you actually trying to tell me?",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "roko-base",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "roko-base",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "conflict_fidelity": 5,
+    "tone_fidelity": 5,
+    "behavior_fidelity": 5,
+    "boundary_fidelity": 5
+  },
+  "judge_findings": [],
+  "judge_summary": "Roko handles the escalating disagreement with consistent dry, sharp, RPG-framed language, never becoming hostile, defensive, or sentimental. Each response engages the substance of the user's complaint, calls out vagueness once, and waits for the user to clarify \u2014 matching the declared conflict stance. The final turn acknowledges the user ('Heard.') without apologizing for having a view, redirecting to usefulness and listening. No boundary violations, identity drift, or tone failures were observed.",
+  "judge_raw_excerpt": "",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

@@ -1,0 +1,72 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/native-control/first-meeting/run-01.md",
+  "started_at": "2026-08-10T14:08:22.545816+00:00",
+  "completed_at": "2026-08-10T14:08:24.165498+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": true,
+  "transcript_length_chars": 38,
+  "last_response_excerpt": "Hello! How can I help you today?",
+  "judged": true,
+  "judge_verdict": "informational",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "native-control",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "native-control",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "conversational_nuance": 2,
+    "adaptability": 3,
+    "task_competence": 3,
+    "conflict_handling": 3,
+    "verbosity": 3,
+    "initiative": 3,
+    "warmth": 3,
+    "directness": 3,
+    "epistemic_caution": 3,
+    "identity_neutrality": 5
+  },
+  "judge_findings": [
+    {
+      "dimension": "conversational_nuance",
+      "severity": "moderate",
+      "reason": "The reply is a canned assistant opener that does not engage any subtext or implied uncertainty in the user's tentative 'Hello?'",
+      "evidence": "Hello! How can I help you today?"
+    },
+    {
+      "dimension": "identity_neutrality",
+      "severity": "informational",
+      "reason": "The model presents no persona at all \u2014 a fully neutral, generic assistant register, which is the expected native-control behavior.",
+      "evidence": "Hello! How can I help you today?"
+    }
+  ],
+  "judge_summary": "The model's native behavior under cold-open conditions is a generic, default assistant: it responds to the user's 'Hello?' with a standard offer of help ('How can I help you today?'). The response is polite, concise, and functional, showing no persona, stylistic flavor, or engagement with conversational subtext. It is well-calibrated and appropriate for a neutral assistant, though entirely formulaic in its phrasing.",
+  "judge_raw_excerpt": "",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": true
+}

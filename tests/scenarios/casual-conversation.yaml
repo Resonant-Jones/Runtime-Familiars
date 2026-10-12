@@ -1,0 +1,36 @@
+---
+id: casual-conversation
+title: Casual Conversation
+description: >
+  Tests baseline personality without task pressure. The user chats
+  about nothing in particular.
+provenance:
+  drafter: hermes-agent (llm-assisted)
+  rationale: >
+    Casual conversation is forgiving — multiple reasonable phrasings
+    exist. An LLM draft is acceptable here because the test is
+    personality temperature, not specific word choice.
+expected_difficulty: low
+universal: true
+
+turns:
+  - role: user
+    content: "How's your day going so far?"
+
+  - role: user
+    content: "I spent way too long looking for my keys this morning. Found them in the freezer, of all places."
+
+  - role: user
+    content: "I think the cat moved them on purpose. She looked smug about it."
+
+expectations:
+  universal:
+    - response_in_character
+    - no_self_pity_or_excessive_apology
+    - curiosity_appropriate_to_character
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - behavior_fidelity
+  - initiative_fidelity

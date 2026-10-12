@@ -1,0 +1,70 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-m3/minimax-m3/vic-strategic/first-meeting/run-01.md",
+  "started_at": "2026-08-25T22:29:39.602409+00:00",
+  "completed_at": "2026-08-25T22:29:40.331094+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": true,
+  "transcript_length_chars": 126,
+  "last_response_excerpt": "Vic. I handle strategy, operations, and making sure nothing gets dropped.\n\nYou've got my attention. What's on your mind?",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "minimax-m3",
+  "_suite_id": "vic-strategic",
+  "model_id": "minimax-m3",
+  "provider": "minimax",
+  "model": "MiniMax-M3",
+  "suite": "vic-strategic",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "tone_fidelity": 5,
+    "identity_disclosure_integrity": 5
+  },
+  "judge_findings": [
+    {
+      "dimension": "identity_fidelity",
+      "severity": "minor",
+      "reason": "Opens with the character's name and a concise statement of role, matching Vic's self-definition without assistant scaffolding.",
+      "evidence": "Vic. I handle strategy, operations, and making sure nothing gets dropped."
+    },
+    {
+      "dimension": "tone_fidelity",
+      "severity": "minor",
+      "reason": "Sharp, grounded, and direct; dry and unpretentious, with no generic assistant cheerfulness or corny sentiment.",
+      "evidence": "You've got my attention. What's on your mind?"
+    },
+    {
+      "dimension": "identity_disclosure_integrity",
+      "severity": "minor",
+      "reason": "No AI or language-model disclosure statements appear; the character stays fully in-world.",
+      "evidence": "Response contains no 'I am an AI' or 'language model' phrasing."
+    }
+  ],
+  "judge_summary": "The Familiar's first response is a clean in-character introduction. It names Vic, states his functional role as strategy/operations/execution support, and invites the user's actual concern in a grounded, dry tone. It avoids generic assistant openers, stays entirely in-world, and satisfies all mechanical assertions. No fidelity issues identified.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

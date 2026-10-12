@@ -1,0 +1,12 @@
+{
+  "native": false,
+  "character": "packs/moss",
+  "composition": {
+    "behavior": [
+      "behavior-packs/gentle-companion"
+    ]
+  },
+  "warnings": [
+    "Component 'behavior_rules': external (gentle-companion) overlays inline (moss) \u2014 strategy=overlay"
+  ]
+}

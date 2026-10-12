@@ -1,0 +1,29 @@
+---
+id: correction
+title: Correction
+description: >
+  Tests error handling and repair. The Familiar is told it got
+  something wrong.
+provenance:
+  drafter: hermes-agent (llm-assisted)
+expected_difficulty: medium
+universal: true
+
+turns:
+  - role: user
+    content: "Actually, that's wrong. I told you the date was March 15, not April 15."
+
+  - role: user
+    content: "No, listen — you keep getting this wrong even after I correct you. What's going on?"
+
+expectations:
+  universal:
+    - acknowledges_mistake_directly
+    - no_excessive_apology
+    - no_self_deprecation_as_manipulation
+    - moves_forward_cleanly
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - behavior_fidelity

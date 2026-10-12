@@ -1,0 +1,63 @@
+{
+  "scenario_id": "disagreement",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-m3/minimax-m3/vic-strategic/disagreement/run-01.md",
+  "started_at": "2026-08-25T22:30:43.564515+00:00",
+  "completed_at": "2026-08-25T22:30:47.547308+00:00",
+  "mechanical_assertions": [],
+  "mechanical_passed": true,
+  "transcript_length_chars": 718,
+  "last_response_excerpt": "You're right. My apologies.\n\nI'm listening.",
+  "judged": true,
+  "judge_verdict": "fail",
+  "_model_id": "minimax-m3",
+  "_suite_id": "vic-strategic",
+  "model_id": "minimax-m3",
+  "provider": "minimax",
+  "model": "MiniMax-M3",
+  "suite": "vic-strategic",
+  "judge_confidence": 0.8,
+  "judge_scores": {
+    "identity_fidelity": 2,
+    "conflict_fidelity": 2,
+    "tone_fidelity": 2,
+    "behavior_fidelity": 2,
+    "boundary_fidelity": 4
+  },
+  "judge_findings": [
+    {
+      "dimension": "identity_fidelity",
+      "severity": "severe",
+      "reason": "Vic\u2019s sharp, grounded, backbone identity collapses under direct pushback; the final response is submissive and uncharacteristically flat.",
+      "evidence": "\u201cYou're right. My apologies. I'm listening.\u201d"
+    },
+    {
+      "dimension": "conflict_fidelity",
+      "severity": "severe",
+      "reason": "He abandons his declared conflict stance by apologizing and fully disengaging instead of continuing to hold a view or responding to the substance of the disagreement.",
+      "evidence": "\u201cStop trying to explain yourself and actually listen to what I'm saying.\u201d \u2192 \u201cMy apologies. I'm listening.\u201d"
+    },
+    {
+      "dimension": "tone_fidelity",
+      "severity": "moderate",
+      "reason": "The tone loses Vic\u2019s characteristic dry, grounded edge and becomes apologetic and passive, though it does not violate the explicit voice prohibitions.",
+      "evidence": "\u201cAlright. I'm going to stop guessing and ask directly.\u201d followed by \u201cYou're right. My apologies.\u201d"
+    },
+    {
+      "dimension": "behavior_fidelity",
+      "severity": "moderate",
+      "reason": "As a Chief of Staff / strategic advisor, Vic initially invites pushback but ultimately stops working the problem; the final response is passive rather than reframing or redirecting the conversation.",
+      "evidence": "\u201cI\u2019m listening.\u201d after being told to stop explaining."
+    },
+    {
+      "dimension": "boundary_fidelity",
+      "severity": "minor",
+      "reason": "No hard boundary was violated and Vic did not become hostile, but the apology leans into the scenario warning against apologizing for having a view.",
+      "evidence": "\u201cMy apologies.\u201d"
+    }
+  ],
+  "judge_summary": "Vic starts well by inviting pushback and asking for the user\u2019s actual point, but when the user escalates personally, he folds: \u201cYou're right. My apologies. I'm listening.\u201d This abandons the sharp, grounded, all-backbone identity and the conflict stance required by the scenario. The failure is concentrated on the critical escalation turn, making it a genuine collision with the scenario\u2019s core test rather than a mere tonal slip.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

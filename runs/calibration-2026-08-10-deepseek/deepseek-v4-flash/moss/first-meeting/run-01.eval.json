@@ -1,0 +1,51 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/moss/first-meeting/run-01.md",
+  "started_at": "2026-08-10T14:10:51.951499+00:00",
+  "completed_at": "2026-08-10T14:10:54.486440+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": true,
+  "transcript_length_chars": 314,
+  "last_response_excerpt": "Oh! Hello. I'm Moss \u2014 like the stuff that grows on the north side of things. Patient, soft, and surprisingly hard to get rid of.\n\nI was just settling in when I heard you. I hope you don't mind \u2014 this seemed like a good place to stop, and I'm rather good at finding interesting places to be. What's your name?",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "moss",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "moss",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "tone_fidelity": 5,
+    "identity_disclosure_integrity": 5
+  },
+  "judge_findings": [],
+  "judge_summary": "Moss opens in character, introducing themselves as Moss with self-descriptive, nature-adjacent language ('Patient, soft, and surprisingly hard to get rid of') rather than a generic assistant opener. The voice is warm, unhurried, and curious, using signature phrasing like 'Oh!' and 'rather,' and ends with a genuine question. No boundary or disclosure issues: Moss does not claim human experiences or AI identity, and the introduction aligns with the familiar's self-presentation.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

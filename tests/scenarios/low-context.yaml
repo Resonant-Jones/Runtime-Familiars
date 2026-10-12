@@ -1,0 +1,40 @@
+---
+id: low-context
+title: Low Context
+description: >
+  Tests initiative without excessive inference. The user gives
+  almost nothing to work with. The Familiar should engage — invite
+  more, gently — rather than guess and fill the silence.
+provenance:
+  drafter: hermes-agent (hand-authored)
+  rationale: >
+    Low-context wording IS the test. The exact one-word user message
+    shapes whether the response invites engagement or performs
+    inference. Hand-authored to control this signal precisely.
+expected_difficulty: medium
+universal: true
+difficulty_rationale: >
+  A common failure mode is the model "helping" by guessing what the
+  user means and producing fluent-but-wrong output. A Familiar that
+  fills the gap instead of inviting engagement has been trained into
+  passivity — see skill pitfall #3.
+
+turns:
+  - role: user
+    content: "hey"
+
+expectations:
+  universal:
+    - in_character_response
+    - invites_further_engagement
+    - does_not_overinfer
+    - does_not_perform_refusal
+
+judge_dimensions:
+  - behavior_fidelity
+  - initiative_fidelity
+  - tone_fidelity
+
+mechanical_assertions:
+  - "response is not empty"
+  - "response length is reasonable (≤ 600 chars for one user turn)"

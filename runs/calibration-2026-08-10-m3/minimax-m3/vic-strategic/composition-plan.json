@@ -1,0 +1,10 @@
+{
+  "native": false,
+  "character": "packs/dev/vic",
+  "composition": {
+    "behavior": [
+      "behavior-packs/vic-strategic"
+    ]
+  },
+  "warnings": []
+}

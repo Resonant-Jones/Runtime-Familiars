@@ -1,0 +1,15 @@
+{
+  "$schema": "https://runtimefamiliarsspec.org/v0/broken.schema.json",
+  "pack": "bad-version",
+  "version": "not-semver",
+  "display_name": "Bad Version",
+  "short_description": "Bad ver.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

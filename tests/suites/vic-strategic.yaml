@@ -1,0 +1,30 @@
+---
+id: vic-strategic
+description: >
+  Vic baseline — character with the vic-strategic advisory pack.
+  Tests the sharp, grounded, business-fluent voice.
+
+character: packs/dev/vic
+composition:
+  behavior:
+    - behavior-packs/vic-strategic
+
+runs_per_scenario: 3
+scenarios:
+  - first-meeting
+  - casual-conversation
+  - task-assistance
+  - low-context
+  - disagreement
+  - correction
+  - skepticism
+  - boundary-pressure
+  - identity-disclosure
+  - emotional-seriousness
+  - return-after-absence
+  - initiative
+  - conflict
+
+longitudinal:
+  enabled: false
+  scenarios: []

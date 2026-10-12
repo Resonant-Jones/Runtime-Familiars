@@ -1,0 +1,18 @@
+{
+  "pack": "missing-dep",
+  "version": "1.0.0",
+  "display_name": "Missing Dep",
+  "short_description": "Has unresolved requires.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ],
+  "requires": [
+    "nonexistent-pack"
+  ],
+  "worldline": "nonexistent-worldline"
+}

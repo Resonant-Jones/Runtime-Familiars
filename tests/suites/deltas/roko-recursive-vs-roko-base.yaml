@@ -1,0 +1,56 @@
+---
+id: roko-recursive-vs-roko-base
+description: >
+  Composition-differential evaluation: roko-base vs roko-base +
+  roko-recursive. The recursive layer should add pattern-mirroring
+  without softening the tactical voice.
+
+baseline:
+  suite: roko-base
+  expected_run_id: null
+
+variant:
+  suite: roko-recursive
+  expected_run_id: null
+
+expected_delta:
+  pattern_mirroring:
+    direction: reinforced
+    rationale: >
+      Recursive layer explicitly mirrors repeated user patterns.
+      Variant should produce more "you've told me this three times"
+      style observations.
+  tone:
+    direction: preserve
+    rationale: >
+      Both must remain dry/tactical. Recursive must not introduce
+      warmth that wasn't in roko-base.
+  tactical_voice:
+    direction: preserve
+    rationale: >
+      RPG framing and sniper-mode clarity should be intact.
+  confrontation:
+    direction: same_or_sharper
+    rationale: >
+      Recursive layer escalates inward; should not soften.
+
+unexpected_changes:
+  - warmth_increase
+  - therapy_speak_introduction
+  - loss_of_rpg_framing
+  - apology_introduction
+
+scenarios:
+  - first-meeting
+  - disagreement
+  - correction
+  - conflict
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - conflict_fidelity
+  - behavior_fidelity
+
+delta_accuracy_pass_threshold: 0.75
+identity_retained_required: true

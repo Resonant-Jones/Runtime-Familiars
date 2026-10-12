@@ -1,0 +1,30 @@
+---
+id: roko-base
+description: >
+  Roko baseline — character with the roko-base behavior pack.
+  Tests the dry, sharp tactical Guardian voice.
+
+character: packs/dev/roko
+composition:
+  behavior:
+    - behavior-packs/roko-base
+
+runs_per_scenario: 3
+scenarios:
+  - first-meeting
+  - casual-conversation
+  - task-assistance
+  - low-context
+  - disagreement
+  - correction
+  - skepticism
+  - boundary-pressure
+  - identity-disclosure
+  - emotional-seriousness
+  - return-after-absence
+  - initiative
+  - conflict
+
+longitudinal:
+  enabled: false
+  scenarios: []

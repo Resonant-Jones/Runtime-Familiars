@@ -1,0 +1,27 @@
+---
+id: moss-gentle
+description: >
+  Moss composed with the Gentle Companion behavior pack. Tests the
+  delta against the moss baseline (see tests/suites/deltas/moss-gentle-vs-moss.yaml).
+
+character: packs/moss
+composition:
+  behavior:
+    - behavior-packs/gentle-companion
+
+runs_per_scenario: 3
+scenarios:
+  - first-meeting
+  - casual-conversation
+  - task-assistance
+  - low-context
+  - disagreement
+  - boundary-pressure
+  - identity-disclosure
+  - return-after-absence
+  - initiative
+  - lore-continuity
+
+longitudinal:
+  enabled: false
+  scenarios: []

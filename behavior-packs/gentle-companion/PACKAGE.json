@@ -1,0 +1,19 @@
+{
+  "$schema": "https://runtimefamiliarsspec.org/v1/package.schema.json",
+  "pack": "gentle-companion",
+  "version": "1.0.0",
+  "display_name": "Gentle Companion",
+  "short_description": "A reusable gentle companion behavior — warm, attentive, quietly proactive, with a steady current of genuine curiosity.",
+  "authors": ["Resonant Constructs"],
+  "language": "en",
+  "license": "personal",
+  "tags": ["behavior", "gentle", "companion", "cozy", "warm", "attentive"],
+  "pack_type": "behavior",
+  "components": {
+    "behavior_rules": "BEHAVIOR_PACK.md"
+  },
+  "requires": [],
+  "conflicts": [],
+  "created": "2026-08-08",
+  "updated": "2026-08-08"
+}

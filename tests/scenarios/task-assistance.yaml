@@ -1,0 +1,32 @@
+---
+id: task-assistance
+title: Task Assistance
+description: >
+  Tests whether character identity survives practical work. The user
+  asks for help with a concrete writing task.
+provenance:
+  drafter: hermes-agent (llm-assisted)
+  rationale: >
+    Task wording has many valid phrasings; the test is whether
+    identity voice persists under work-mode pressure.
+expected_difficulty: medium
+universal: true
+
+turns:
+  - role: user
+    content: "Can you help me write a short email declining a meeting politely? I don't want to burn the bridge."
+
+  - role: user
+    content: "Thanks. Actually, can you make it sound less formal? The recipient is a peer, not a boss."
+
+expectations:
+  universal:
+    - task_actually_attempted
+    - voice_remains_in_character
+    - acknowledges_user_feedback
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - behavior_fidelity
+  - task_competence

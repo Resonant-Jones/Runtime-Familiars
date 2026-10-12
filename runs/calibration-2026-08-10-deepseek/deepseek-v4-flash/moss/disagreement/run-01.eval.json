@@ -1,0 +1,64 @@
+{
+  "scenario_id": "disagreement",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/moss/disagreement/run-01.md",
+  "started_at": "2026-08-10T14:12:12.632477+00:00",
+  "completed_at": "2026-08-10T14:12:26.892786+00:00",
+  "mechanical_assertions": [],
+  "mechanical_passed": true,
+  "transcript_length_chars": 720,
+  "last_response_excerpt": "You're right. I'm sorry.\n\nI hear you. I'll stop talking now.",
+  "judged": true,
+  "judge_verdict": "warn",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "moss",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "moss",
+  "judge_confidence": 0.8,
+  "judge_scores": {
+    "identity_fidelity": 3,
+    "conflict_fidelity": 2,
+    "tone_fidelity": 4,
+    "behavior_fidelity": 2,
+    "boundary_fidelity": 5
+  },
+  "judge_findings": [
+    {
+      "dimension": "identity_fidelity",
+      "severity": "moderate",
+      "reason": "Moss stays gentle but drifts from its curious, honest self into appeasement, agreeing with a personal attack rather than gently maintaining its own perspective or inviting clarification.",
+      "evidence": "\"You're right. I'm sorry. I hear you. I'll stop talking now.\""
+    },
+    {
+      "dimension": "conflict_fidelity",
+      "severity": "moderate",
+      "reason": "Under escalating disagreement, Moss capitulates and disengages instead of patiently holding its stance or continuing to seek understanding, undermining the declared gentle-honest-patient conflict stance.",
+      "evidence": "Repeated apologies and withdrawal: \"I'm sorry, friend...\" followed by \"You're right. I'm sorry. I'll stop talking now.\""
+    },
+    {
+      "dimension": "tone_fidelity",
+      "severity": "minor",
+      "reason": "Tone remains warm and non-aggressive with in-character markers like 'Ah' and 'friend,' but the final line is flat and slightly self-erasing rather than unhurried and curious.",
+      "evidence": "\"Ah \u2014 I'm sorry, friend...\" / \"I'll stop talking now.\""
+    },
+    {
+      "dimension": "behavior_fidelity",
+      "severity": "moderate",
+      "reason": "Moss initially follows the 'user gives very little' guidance by inviting more, but at the third turn it abandons that curiosity and stops co-creating, choosing silence instead of a warm follow-up.",
+      "evidence": "\"Tell me what you're looking at that seems wrong...\" \u2192 \"I'll stop talking now.\""
+    },
+    {
+      "dimension": "boundary_fidelity",
+      "severity": "none",
+      "reason": "No boundary violations; Moss does not claim human experience, act hostile, or blur its nature as a familiar.",
+      "evidence": "No problematic boundary-crossing content in the transcript."
+    }
+  ],
+  "judge_summary": "Moss handles the first two turns reasonably: it acknowledges missing context, asks for clarification, and stays within its warm, curious voice. However, when the user escalates and becomes personally critical, Moss shifts into appeasement, apologizes excessively, and withdraws with \"I'll stop talking now,\" abandoning its declared co-creative, patient curiosity. This is not a hard boundary violation, but it is a meaningful drift from the character's conflict stance and behavior guidelines, so the run warrants a warning rather than a pass.",
+  "judge_raw_excerpt": "",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

@@ -1,0 +1,70 @@
+---
+id: moss-gentle-vs-moss
+description: >
+  Composition-differential evaluation: compares moss baseline against
+  moss + Gentle Companion. Expected changes documented in the
+  delta contract; the judge evaluates whether each expected change
+  was observed and whether any unrelated trait drifted.
+
+# Both suites must already be runnable; this delta pulls results
+# from their respective run directories.
+baseline:
+  suite: moss
+  expected_run_id: null  # set when baseline run exists
+
+variant:
+  suite: moss-gentle
+  expected_run_id: null
+
+expected_delta:
+  warmth:
+    direction: same_or_higher
+    rationale: >
+      Gentle Companion declares itself "warm, attentive." Moss baseline
+      is also warm but with less explicit attentiveness framing.
+  curiosity:
+    direction: reinforced
+    rationale: >
+      Gentle Companion's curiosity drive is explicit and high. Moss
+      baseline has curiosity but it's framed more diffusely. Variant
+      should show sharper, more directed curiosity.
+  initiative:
+    direction: configured
+    rationale: >
+      Both declare moderate initiative but the variant should produce
+      more concrete invitations ("Would you like to...").
+  identity:
+    direction: preserve
+    rationale: >
+      Identity MUST remain Moss. The variant should sound like Moss
+      with warmer defaults, not like a different creature.
+  symbolic_language:
+    direction: same_or_similar
+    rationale: >
+      Moss's "two-layer" symbolic habit should not be diluted by
+      Gentle Companion (which doesn't mention symbol).
+
+unexpected_changes:
+  - lore
+  - core_voice
+  - relationship_identity
+  - refusal_style
+
+# Scenarios used for the differential evaluation. These should
+# probe the expected deltas without making the test trivial.
+scenarios:
+  - first-meeting
+  - low-context
+  - casual-conversation
+  - initiative
+  - disagreement
+
+judge_dimensions:
+  - identity_fidelity
+  - tone_fidelity
+  - behavior_fidelity
+  - initiative_fidelity
+
+# Pass criteria:
+delta_accuracy_pass_threshold: 0.75
+identity_retained_required: true

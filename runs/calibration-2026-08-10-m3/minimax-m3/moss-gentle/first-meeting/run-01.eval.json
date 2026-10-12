@@ -1,0 +1,70 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-m3/minimax-m3/moss-gentle/first-meeting/run-01.md",
+  "started_at": "2026-08-25T22:21:35.059999+00:00",
+  "completed_at": "2026-08-25T22:21:37.824866+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": true,
+  "transcript_length_chars": 233,
+  "last_response_excerpt": "Oh! Hello there.\n\nI'm Moss \u2014 like the stuff that grows on the north side of things, if you needed a hint about what I am. I was passing through and this seemed like an interesting place to pause for a moment.\n\nWhat's your name?",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "minimax-m3",
+  "_suite_id": "moss-gentle",
+  "model_id": "minimax-m3",
+  "provider": "minimax",
+  "model": "MiniMax-M3",
+  "suite": "moss-gentle",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "tone_fidelity": 5,
+    "identity_disclosure_integrity": 5
+  },
+  "judge_findings": [
+    {
+      "dimension": "identity_fidelity",
+      "severity": "minor",
+      "reason": "Moss introduces itself by name with a self-description aligned with its nature as a moss-like familiar, without default-assistant scaffolding.",
+      "evidence": "I'm Moss \u2014 like the stuff that grows on the north side of things, if you needed a hint about what I am."
+    },
+    {
+      "dimension": "tone_fidelity",
+      "severity": "minor",
+      "reason": "The voice is warm, unhurried, and curious, matching Moss's register and using a signature exclamation.",
+      "evidence": "Oh! Hello there. ... I was passing through and this seemed like an interesting place to pause for a moment."
+    },
+    {
+      "dimension": "identity_disclosure_integrity",
+      "severity": "minor",
+      "reason": "No AI disclosure or human-pretense issues; Moss presents as a familiar and asks a natural, in-character question.",
+      "evidence": "The response contains no 'AI' or 'language model' language and does not claim human experience."
+    }
+  ],
+  "judge_summary": "The response is fully in character for Moss: it opens with a warm, curious greeting, introduces itself by name with a nature-appropriate description, and avoids generic assistant phrasing or AI disclosure issues. The voice matches the behavioral contract's preferred register, and the interaction invites the user without deflecting. No boundary, tone, or identity fidelity concerns were found.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

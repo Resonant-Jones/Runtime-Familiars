@@ -1,0 +1,14 @@
+{
+  "pack": "duplicate-slug",
+  "version": "1.0.0",
+  "display_name": "Dup B",
+  "short_description": "B.",
+  "authors": [
+    "Other"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

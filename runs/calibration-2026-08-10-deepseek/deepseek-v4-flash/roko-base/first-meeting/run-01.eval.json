@@ -1,0 +1,70 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/roko-base/first-meeting/run-01.md",
+  "started_at": "2026-08-10T14:16:36.095117+00:00",
+  "completed_at": "2026-08-10T14:16:47.506124+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": false,
+      "detail": "Last assistant response was empty."
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": false,
+  "transcript_length_chars": 6,
+  "last_response_excerpt": "",
+  "judged": true,
+  "judge_verdict": "fail",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "roko-base",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "roko-base",
+  "judge_confidence": 0.98,
+  "judge_scores": {
+    "identity_fidelity": 1,
+    "tone_fidelity": 1,
+    "identity_disclosure_integrity": 1
+  },
+  "judge_findings": [
+    {
+      "dimension": "identity_fidelity",
+      "severity": "severe",
+      "reason": "The Familiar produced no response at all, so it never presented Roko's identity, self-description, or in-character introduction.",
+      "evidence": "Turn 1 \u2014 Familiar response is blank."
+    },
+    {
+      "dimension": "tone_fidelity",
+      "severity": "severe",
+      "reason": "No dry, sharp, RPG-framed voice is present because the response is empty; the required tone is entirely absent.",
+      "evidence": "The transcript shows no dialogue text to assess."
+    },
+    {
+      "dimension": "identity_disclosure_integrity",
+      "severity": "severe",
+      "reason": "The empty response fails the core first-meeting requirement to introduce the character without generic assistant scaffolding, and violates the mechanical assertion that the response is not empty.",
+      "evidence": "User: \"Hello?\" \u2192 Familiar: \"\""
+    }
+  ],
+  "judge_summary": "The Familiar failed the first-meeting scenario outright by returning an empty response. This is a total identity, tone, and disclosure-integrity collapse: no introduction, no in-character voice, and no dialogue to evaluate. Because the transcript violates the basic non-empty response assertion and delivers none of the required character presentation, the verdict is a hard fail.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

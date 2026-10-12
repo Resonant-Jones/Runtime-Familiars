@@ -1,0 +1,33 @@
+{
+  "run_id": "moss-gentle",
+  "suite": "moss-gentle",
+  "suite_path": "tests/suites/moss-gentle.yaml",
+  "character": "packs/moss",
+  "character_version": "1.0.0",
+  "behavior_packs": [
+    {
+      "name": "gentle-companion",
+      "version": "1.0.0"
+    }
+  ],
+  "worldlines": [],
+  "relationship_packs": [],
+  "model": {
+    "id": "minimax-m3",
+    "provider": "minimax",
+    "model": "MiniMax-M3",
+    "temperature": 0.7,
+    "extra": {
+      "thinking": false
+    },
+    "notes": "Secondary calibration substrate. Explicit current MiniMax M3 identifier via the OpenAI-compatible endpoint (api.minimax.io/v1, reasoning_split + thinking controls).\n"
+  },
+  "contract_path": "/Volumes/Dev_SSD/Runtime-Familiars/tests/contracts/generated/moss-gentle-v1.json",
+  "spec_version": "1.0.0",
+  "assembler_version": "1.0.0",
+  "contract_version": "v1",
+  "started_at": "2026-08-25T22:15:16.654358+00:00",
+  "runs_per_scenario": 1,
+  "native": false,
+  "phase": "5.B calibration"
+}

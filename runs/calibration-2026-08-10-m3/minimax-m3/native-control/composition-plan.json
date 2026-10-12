@@ -1,0 +1,8 @@
+{
+  "native": true,
+  "character": null,
+  "composition": {},
+  "warnings": [
+    "native-control suite: no identity package assembled"
+  ]
+}

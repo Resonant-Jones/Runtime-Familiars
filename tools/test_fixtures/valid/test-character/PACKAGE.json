@@ -1,0 +1,14 @@
+{
+  "pack": "test-character",
+  "version": "1.0.0",
+  "display_name": "Test Character",
+  "short_description": "A test.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ]
+}

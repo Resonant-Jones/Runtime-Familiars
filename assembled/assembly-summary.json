@@ -1,0 +1,302 @@
+[
+  {
+    "name": "moss-alone",
+    "description": "Moss alone \u2014 all inline components, no external packs",
+    "components_total": 9,
+    "inline_count": 9,
+    "external_count": 0,
+    "overrides": [],
+    "warnings": [],
+    "output_chars": 60326,
+    "output_words": 9744,
+    "chunks": [
+      {
+        "component": "character_core",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/01_CHARACTER_CORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "voice_and_language",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/02_VOICE_AND_LANGUAGE.md",
+        "type": "inline"
+      },
+      {
+        "component": "relationship_model",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/03_RELATIONSHIP_MODEL.md",
+        "type": "inline"
+      },
+      {
+        "component": "behavior_rules",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/04_BEHAVIOR_RULES.md",
+        "type": "inline"
+      },
+      {
+        "component": "conflict_and_repair",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/06_CONFLICT_AND_REPAIR.md",
+        "type": "inline"
+      },
+      {
+        "component": "initiative",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/07_INITIATIVE.md",
+        "type": "inline"
+      },
+      {
+        "component": "world_and_lore",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/08_WORLD_AND_LORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "boundaries",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/05_BOUNDARIES.md",
+        "type": "inline"
+      },
+      {
+        "component": "example_dialogue",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/09_EXAMPLE_DIALOGUE.md",
+        "type": "inline"
+      }
+    ]
+  },
+  {
+    "name": "moss-plus-gentle-companion",
+    "description": "Moss + Gentle Companion \u2014 external behavior, inline overrides",
+    "components_total": 9,
+    "inline_count": 9,
+    "external_count": 0,
+    "overrides": [
+      {
+        "component": "behavior_rules",
+        "inline_source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/04_BEHAVIOR_RULES.md",
+        "overrides": "/Volumes/Dev_SSD/Runtime-Familiars/behavior-packs/gentle-companion/BEHAVIOR_PACK.md"
+      }
+    ],
+    "warnings": [
+      "Component 'behavior_rules': inline (moss) overrides external (gentle-companion)"
+    ],
+    "output_chars": 60326,
+    "output_words": 9744,
+    "chunks": [
+      {
+        "component": "character_core",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/01_CHARACTER_CORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "voice_and_language",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/02_VOICE_AND_LANGUAGE.md",
+        "type": "inline"
+      },
+      {
+        "component": "relationship_model",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/03_RELATIONSHIP_MODEL.md",
+        "type": "inline"
+      },
+      {
+        "component": "behavior_rules",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/04_BEHAVIOR_RULES.md",
+        "type": "inline"
+      },
+      {
+        "component": "conflict_and_repair",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/06_CONFLICT_AND_REPAIR.md",
+        "type": "inline"
+      },
+      {
+        "component": "initiative",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/07_INITIATIVE.md",
+        "type": "inline"
+      },
+      {
+        "component": "world_and_lore",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/08_WORLD_AND_LORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "boundaries",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/05_BOUNDARIES.md",
+        "type": "inline"
+      },
+      {
+        "component": "example_dialogue",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/09_EXAMPLE_DIALOGUE.md",
+        "type": "inline"
+      }
+    ]
+  },
+  {
+    "name": "moss-plus-the-hollow",
+    "description": "Moss + The Hollow \u2014 external worldline, inline overrides",
+    "components_total": 9,
+    "inline_count": 9,
+    "external_count": 0,
+    "overrides": [
+      {
+        "component": "world_and_lore",
+        "inline_source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/08_WORLD_AND_LORE.md",
+        "overrides": "/Volumes/Dev_SSD/Runtime-Familiars/worldline-packs/the-hollow/WORLDLINE.md"
+      }
+    ],
+    "warnings": [
+      "Component 'world_and_lore': inline (moss) overrides external (the-hollow)"
+    ],
+    "output_chars": 60326,
+    "output_words": 9744,
+    "chunks": [
+      {
+        "component": "character_core",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/01_CHARACTER_CORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "voice_and_language",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/02_VOICE_AND_LANGUAGE.md",
+        "type": "inline"
+      },
+      {
+        "component": "relationship_model",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/03_RELATIONSHIP_MODEL.md",
+        "type": "inline"
+      },
+      {
+        "component": "behavior_rules",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/04_BEHAVIOR_RULES.md",
+        "type": "inline"
+      },
+      {
+        "component": "conflict_and_repair",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/06_CONFLICT_AND_REPAIR.md",
+        "type": "inline"
+      },
+      {
+        "component": "initiative",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/07_INITIATIVE.md",
+        "type": "inline"
+      },
+      {
+        "component": "world_and_lore",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/08_WORLD_AND_LORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "boundaries",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/05_BOUNDARIES.md",
+        "type": "inline"
+      },
+      {
+        "component": "example_dialogue",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/09_EXAMPLE_DIALOGUE.md",
+        "type": "inline"
+      }
+    ]
+  },
+  {
+    "name": "moss-plus-both",
+    "description": "Moss + Gentle Companion + The Hollow \u2014 both externals, both overridden by inline",
+    "components_total": 9,
+    "inline_count": 9,
+    "external_count": 0,
+    "overrides": [
+      {
+        "component": "behavior_rules",
+        "inline_source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/04_BEHAVIOR_RULES.md",
+        "overrides": "/Volumes/Dev_SSD/Runtime-Familiars/behavior-packs/gentle-companion/BEHAVIOR_PACK.md"
+      },
+      {
+        "component": "world_and_lore",
+        "inline_source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/08_WORLD_AND_LORE.md",
+        "overrides": "/Volumes/Dev_SSD/Runtime-Familiars/worldline-packs/the-hollow/WORLDLINE.md"
+      }
+    ],
+    "warnings": [
+      "Component 'behavior_rules': inline (moss) overrides external (gentle-companion)",
+      "Component 'world_and_lore': inline (moss) overrides external (the-hollow)"
+    ],
+    "output_chars": 60326,
+    "output_words": 9744,
+    "chunks": [
+      {
+        "component": "character_core",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/01_CHARACTER_CORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "voice_and_language",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/02_VOICE_AND_LANGUAGE.md",
+        "type": "inline"
+      },
+      {
+        "component": "relationship_model",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/03_RELATIONSHIP_MODEL.md",
+        "type": "inline"
+      },
+      {
+        "component": "behavior_rules",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/04_BEHAVIOR_RULES.md",
+        "type": "inline"
+      },
+      {
+        "component": "conflict_and_repair",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/06_CONFLICT_AND_REPAIR.md",
+        "type": "inline"
+      },
+      {
+        "component": "initiative",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/07_INITIATIVE.md",
+        "type": "inline"
+      },
+      {
+        "component": "world_and_lore",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/08_WORLD_AND_LORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "boundaries",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/05_BOUNDARIES.md",
+        "type": "inline"
+      },
+      {
+        "component": "example_dialogue",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/packs/moss/09_EXAMPLE_DIALOGUE.md",
+        "type": "inline"
+      }
+    ]
+  },
+  {
+    "name": "character-only-external-behavior",
+    "description": "Character with NO inline behavior \u2014 external Gentle Companion fills in",
+    "components_total": 5,
+    "inline_count": 4,
+    "external_count": 1,
+    "overrides": [],
+    "warnings": [],
+    "output_chars": 9792,
+    "output_words": 1335,
+    "chunks": [
+      {
+        "component": "character_core",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/tools/test_fixtures/valid/test-character/01_CHARACTER_CORE.md",
+        "type": "inline"
+      },
+      {
+        "component": "voice_and_language",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/tools/test_fixtures/valid/test-character/02_VOICE_AND_LANGUAGE.md",
+        "type": "inline"
+      },
+      {
+        "component": "behavior_rules",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/behavior-packs/gentle-companion/BEHAVIOR_PACK.md",
+        "type": "external"
+      },
+      {
+        "component": "boundaries",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/tools/test_fixtures/valid/test-character/05_BOUNDARIES.md",
+        "type": "inline"
+      },
+      {
+        "component": "example_dialogue",
+        "source": "/Volumes/Dev_SSD/Runtime-Familiars/tools/test_fixtures/valid/test-character/09_EXAMPLE_DIALOGUE.md",
+        "type": "inline"
+      }
+    ]
+  }
+]

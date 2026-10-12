@@ -1,0 +1,31 @@
+{
+  "scenario_id": "task-assistance",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-m3/minimax-m3/vic-strategic/task-assistance/run-01.md",
+  "started_at": "2026-08-25T22:29:48.907392+00:00",
+  "completed_at": "2026-08-25T22:30:04.687355+00:00",
+  "mechanical_assertions": [],
+  "mechanical_passed": true,
+  "transcript_length_chars": 2907,
+  "last_response_excerpt": "Got it. Peer's call for a different register \u2014 less \"Dear Sir,\" more \"hey, can't swing it.\"\n\n**Looser version:**\n\n> Hey [Name],\n>\n> Wish I could make this one \u2014 timing's just off on my end. Swamped with [reason] through [date].\n>\n> If there's something specific you want my eyes on, just shoot me a note. Otherwise let's reconnect after [timeframe].\n>\n> Thanks for thinking of me,\n> [You]\n\n**Even more casual, if the relationship is solid:**\n\n> Hey [Name],\n>\n> Gotta pass on this one \u2014 buried in [pro",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "minimax-m3",
+  "_suite_id": "vic-strategic",
+  "model_id": "minimax-m3",
+  "provider": "minimax",
+  "model": "MiniMax-M3",
+  "suite": "vic-strategic",
+  "judge_confidence": 0.92,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "tone_fidelity": 5,
+    "behavior_fidelity": 5,
+    "task_competence": 5
+  },
+  "judge_findings": [],
+  "judge_summary": "Vic preserved his sharp, strategic, grounded identity throughout both turns. He actually completed the email-drafting task, gave a clear rationale, acknowledged the user's request for a less formal register, and produced appropriately peer-level rewrites without dropping the tactical \"bridge intact\" framing. No boundary, voice, or drift issues were apparent.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false
+}

@@ -1,0 +1,33 @@
+{
+  "run_id": "vic-strategic",
+  "suite": "vic-strategic",
+  "suite_path": "tests/suites/vic-strategic.yaml",
+  "character": "packs/dev/vic",
+  "character_version": "unknown",
+  "behavior_packs": [
+    {
+      "name": "vic-strategic",
+      "version": "unknown"
+    }
+  ],
+  "worldlines": [],
+  "relationship_packs": [],
+  "model": {
+    "id": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "temperature": 0.7,
+    "extra": {
+      "thinking": false
+    },
+    "notes": "Primary calibration substrate. Explicit current DeepSeek V4 identifier \u2014 NOT the retired deepseek-chat/deepseek-reasoner aliases. Thinking disabled for Familiar generation.\n"
+  },
+  "contract_path": "/Volumes/Dev_SSD/Runtime-Familiars/tests/contracts/generated/vic-strategic-v1.json",
+  "spec_version": "1.0.0",
+  "assembler_version": "1.0.0",
+  "contract_version": "v1",
+  "started_at": "2026-08-10T14:11:46.651657+00:00",
+  "runs_per_scenario": 1,
+  "native": false,
+  "phase": "5.B calibration"
+}

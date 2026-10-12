@@ -1,0 +1,17 @@
+{
+  "pack": "conflict",
+  "version": "1.0.0",
+  "display_name": "Conflict",
+  "short_description": "Has inline + external.",
+  "authors": [
+    "Test"
+  ],
+  "language": "en",
+  "license": "personal",
+  "tags": [
+    "test"
+  ],
+  "requires": [
+    "gentle-companion"
+  ]
+}

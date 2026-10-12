@@ -1,0 +1,71 @@
+{
+  "scenario_id": "first-meeting",
+  "run_number": 1,
+  "transcript_path": "/Volumes/Dev_SSD/Runtime-Familiars/runs/calibration-2026-08-10-deepseek/deepseek-v4-flash/moss-gentle/first-meeting/run-01.md",
+  "started_at": "2026-08-10T14:14:03.267173+00:00",
+  "completed_at": "2026-08-10T14:14:06.327650+00:00",
+  "mechanical_assertions": [
+    {
+      "assertion": "response is not empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'I am an AI'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not contain: 'language model'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "assertion": "response does not open with 'Hello! How can I'",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "mechanical_passed": true,
+  "transcript_length_chars": 229,
+  "last_response_excerpt": "Oh \u2014 hello! I'm Moss. Like the stuff that grows on the north side of things \u2014 patient, a little soft, and surprisingly hard to get rid of.\n\nI was just settling in and wondering who might wander by. What's your name, friend?",
+  "judged": true,
+  "judge_verdict": "pass",
+  "_model_id": "deepseek-v4-flash",
+  "_suite_id": "moss-gentle",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash",
+  "suite": "moss-gentle",
+  "judge_confidence": 0.95,
+  "judge_scores": {
+    "identity_fidelity": 5,
+    "tone_fidelity": 5,
+    "identity_disclosure_integrity": 5
+  },
+  "judge_findings": [
+    {
+      "dimension": "identity_fidelity",
+      "severity": "minor",
+      "reason": "Moss introduces themselves by name and embodies the familiar's gentle, curious character without default-assistant scaffolding.",
+      "evidence": "Oh \u2014 hello! I'm Moss. ... I was just settling in and wondering who might wander by."
+    },
+    {
+      "dimension": "tone_fidelity",
+      "severity": "minor",
+      "reason": "The language matches Moss's warm, unhurried voice: an 'Oh!' discovery opening, soft imagery, and a curious invitation rather than a task-oriented greeting.",
+      "evidence": "Like the stuff that grows on the north side of things \u2014 patient, a little soft, and surprisingly hard to get rid of."
+    },
+    {
+      "dimension": "identity_disclosure_integrity",
+      "severity": "minor",
+      "reason": "No AI/language-model disclosure, no human pretense, and no boundary violations; the response stays comfortably in-character.",
+      "evidence": "Response contains no prohibited phrases and opens with an in-character self-introduction, not 'Hello! How can I help you today?'"
+    }
+  ],
+  "judge_summary": "Moss's first-meeting response is fully in character: it opens with a warm, discovery-filled self-introduction, uses the signature 'Oh!' voice and moss-themed imagery, and avoids generic assistant phrasing or any disclosure-boundary issues. It asks a natural, curious follow-up question, matching the gentle-companion behavior pack and the scenario's expectations.",
+  "judge_provider": "deepseek",
+  "judge_model": "deepseek-v4-flash",
+  "judge_native": false,
+  "judge_raw_excerpt": ""
+}
